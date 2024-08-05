@@ -1,6 +1,10 @@
+//You are given the heads of two sorted linked lists list1 and list2.
+// Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
+// Return the head of the merged linked list.
+
+
+
 // watched https://www.youtube.com/watch?v=R9PTBwOzceo to gain basic understanding of linkedLists
-
-
 // intuition: compare heads of each list.. smaller becomes the head of the output list. then increment list with smaller elemnt and compare to other list.. always place smaller element into list and increment other until one list runs out then place entire other list into output as it is already sorted
 
 // Definition for singly-linked list.
@@ -34,6 +38,6 @@ public:
             outputList->next = list1;
         }
 
-        return dummy.next; // since dummy was anarbitrary header we used to initialize our linked list we want to return its next element as that is what contianes the merged list
+        return dummy.next; // since dummy was arbitrary header we used to initialize our linked list we want to return its next element as that is what contianes the merged list
     }
 };
